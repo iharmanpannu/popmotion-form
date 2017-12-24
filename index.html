@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JavaScript Animation Tutorial</title>
+  <title>PopMotion Form</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -25,41 +25,8 @@
       </form>
     </div>
   </div>
-  
+  <style src="index.js"></style>
   <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
-<script>
-  const container = popmotion.styler(document.querySelector('.container'));
-  const formElements = document.querySelector('.inner');
-  const msgPop = popmotion.styler(document.querySelector('.msg'));
-
-  popmotion.tween({
-      from: {
-        scale: .7,
-        opacity: 0,
-        y: -300,
-      },
-      to: {
-        scale: 1,
-        opacity: 1,
-        y: 0,
-      },
-      duration: 1000
-    })
-      .start(container.set);
-
-      const stylers = Array
-  .from(formElements.children)
-  .map(popmotion.styler); 
-        
-const animations = Array(stylers.length)
-  .fill(popmotion.spring({ from: 100, to:  0 }));
-
-popmotion.stagger(animations, 100)
-  .start((v) => v.forEach((x, i) => stylers[i].set('x', x)));
-
-
-</script>
-
 </body>
 
 </html>
