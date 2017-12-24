@@ -26,9 +26,21 @@
   <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
 
 <script>
-  const container = popmotion.styler(document.querySelector('.container'))
-  const formElements = popmotion.styler(document.querySelector('.inner'))
-  const msgPop = popmotion.styler(document.querySelector('.msg'))
+  var container = popmotion.styler(document.querySelector('.container'))
+  var formElements = popmotion.styler(document.querySelector('.inner'))
+  var msgPop = popmotion.styler(document.querySelector('.msg'))
+popmotion.tween({
+  form: {
+    scale: .7,
+    opacity: 0
+  },
+  to: {
+    scale: 1,
+    opacity: 1
+  },
+  duration: 2000,
+}).start(container.set)
+
 </script>
 
 </body>
