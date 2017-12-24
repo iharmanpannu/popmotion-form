@@ -22,26 +22,7 @@
       </form>
     </div>
   </div>
-
   <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
-
-<script>
-  var container = popmotion.styler(document.querySelector('.container'))
-  var formElements = popmotion.styler(document.querySelector('.inner'))
-  var msgPop = popmotion.styler(document.querySelector('.msg'))
-popmotion.tween({
-  form: {
-    scale: .7,
-    opacity: 0
-  },
-  to: {
-    scale: 1,
-    opacity: 1
-  },
-  duration: 2000,
-}).start(container.set)
-
-</script>
-
+  <script src="./index.js"></script>
 </body>
 </html>
