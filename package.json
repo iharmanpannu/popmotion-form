@@ -1,0 +1,23 @@
+{
+  "name": "popmotion-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iharmanpannu/popmotion-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iharmanpannu/popmotion-form/issues"
+  },
+  "homepage": "https://github.com/iharmanpannu/popmotion-form#readme",
+  "dependencies": {
+    "popmotion": "^8.1.3"
+  }
+}
