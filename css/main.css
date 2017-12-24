@@ -1,7 +1,7 @@
     html,
     body {
         margin: 0;
-        background: lightgray;
+        background: #2E333D;
         font-family: Arial;
     }
 
@@ -25,7 +25,7 @@
 
     .btn {
         width: 100%;
-        background: #00c3ff;
+        background: #E94A61;
         color: white;
         margin-top: 2em;
         border: none;
@@ -41,8 +41,9 @@
 
     .msg {
         position: absolute;
-        padding: .5em;
-        background: rgba(0, 0, 0, .8);
+        padding: .3em;
+        background: rgba(0, 0, 0, .6);
         color: #fff;
         opacity: 0;
+        border-radius: 10px;
     }
